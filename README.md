@@ -1,4 +1,4 @@
 # techtalk
 
-1. npm install
-2. node app.js
+1. run npm install
+2. run node app.js
