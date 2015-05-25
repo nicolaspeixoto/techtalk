@@ -7,15 +7,18 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-	res.send("create user");
+  res.send("create user");
+  next();
 });
 
 router.delete('/:id', function(req, res, next){
-	res.send("delete user id:"  + req.params.id);
+  res.send("delete user id:"  + req.params.id);
+  next();
 });
 
 router.get('/:id', function(req, res, next){
-	res.send("get user id:" + req.params.id);
+  res.send("get user id:" + req.params.id);
+  next();
 });
 
 module.exports = router;
