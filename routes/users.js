@@ -1,24 +1,20 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.send("list all users");
-  next();
 });
 
-router.post('/', function(req, res, next){
+router.post('/', function(req, res){
   res.send("create user");
-  next();
 });
 
-router.delete('/:id', function(req, res, next){
+router.delete('/:id', function(req, res){
   res.send("delete user id:"  + req.params.id);
-  next();
 });
 
-router.get('/:id', function(req, res, next){
+router.get('/:id', function(req, res){
   res.send("get user id:" + req.params.id);
-  next();
 });
 
 module.exports = router;
