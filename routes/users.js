@@ -18,3 +18,30 @@ router.get('/:id', function(req, res){
 });
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*wait(60000);
+
+
+function wait(delay){
+    var startTime = new Date().getTime();
+    while (new Date().getTime() < startTime + delay);
+}*/
+
